@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07494B2E19E8539F0031C94D /* slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07494B2D19E8539F0031C94D /* slot.swift */; };
 		07C9D14019E732E400225451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9D13F19E732E400225451 /* AppDelegate.swift */; };
 		07C9D14219E732E400225451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9D14119E732E400225451 /* ViewController.swift */; };
 		07C9D14519E732E400225451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C9D14319E732E400225451 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07494B2D19E8539F0031C94D /* slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slot.swift; sourceTree = "<group>"; };
 		07C9D13A19E732E400225451 /* SlotMachine3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlotMachine3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C9D13E19E732E400225451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07C9D13F19E732E400225451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		07C9D13119E732E400225451 = {
 			isa = PBXGroup;
 			children = (
+				07494B2D19E8539F0031C94D /* slot.swift */,
 				07C9D13C19E732E400225451 /* SlotMachine3 */,
 				07C9D15219E732E400225451 /* SlotMachine3Tests */,
 				07C9D13B19E732E400225451 /* Products */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07494B2E19E8539F0031C94D /* slot.swift in Sources */,
 				07C9D14219E732E400225451 /* ViewController.swift in Sources */,
 				07C9D14019E732E400225451 /* AppDelegate.swift in Sources */,
 			);
@@ -407,6 +411,7 @@
 				07C9D15B19E732E400225451 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C9D15C19E732E400225451 /* Build configuration list for PBXNativeTarget "SlotMachine3Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				07C9D15E19E732E400225451 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
