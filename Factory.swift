@@ -14,6 +14,7 @@ class Factory {
         let kNumberOfSlots = 3
         let kNumberOfContainers = 3
         var slots: [[Slot]] = []
+        
         for var containerNumber = 0; containerNumber < kNumberOfContainers; ++containerNumber {
             var slotArray:[Slot] = []
             for var slotNumber = 0; slotNumber < kNumberOfSlots; ++slotNumber {
@@ -31,7 +32,7 @@ class Factory {
             currentCardValues.append(slot.value)
         }
         var randomNumber = Int(arc4random_uniform(UInt32(13)))
-        while contains(currentCardValues, randomNumber) {
+        while contains(currentCardValues, randomNumber + 1) {
             randomNumber = Int(arc4random_uniform(UInt32(13)))
         }
         var slot:Slot

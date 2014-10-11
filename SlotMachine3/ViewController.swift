@@ -45,6 +45,9 @@ class ViewController: UIViewController {
     var betMaxButton:UIButton!
     var spinButton:UIButton!
     
+    // Slots
+    var slots:[[Slot]] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +58,8 @@ class ViewController: UIViewController {
         setupThirdContainer(self.thirdContainer)
         setupFourthContainer(self.fourthContainer)
         
+
+
         
     }
 
@@ -221,6 +226,8 @@ class ViewController: UIViewController {
     }
     
     func spinButtonPressed (button: UIButton) {
+        slots = Factory.createSlots()
+        setupSecondContainer(self.secondContainer)
         
     }
     
