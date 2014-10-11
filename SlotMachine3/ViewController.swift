@@ -48,16 +48,19 @@ class ViewController: UIViewController {
     // Slots
     var slots:[[Slot]] = []
     
+    var credits = 0
+    var currentBet = 0
+    var winnings = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         setupContainerViews()
         setupFirstContainer(self.firstContainer)
-        setupSecondContainer(self.secondContainer)
+        // setupSecondContainer(self.secondContainer)
         setupThirdContainer(self.thirdContainer)
         setupFourthContainer(self.fourthContainer)
-        
+        hardReset()
 
 
         
@@ -221,9 +224,9 @@ class ViewController: UIViewController {
         containerView.addSubview(self.spinButton)
 
     }
-    
+       
     func resetButtonPressed (button: UIButton) {
-        println("resetButtonPressed")
+        hardReset()
     }
     
     
@@ -250,6 +253,15 @@ class ViewController: UIViewController {
                 view.removeFromSuperview()
             }
         }
+    }
+    
+    func hardReset() {
+        removeSlotImageViews()
+        slots.removeAll(keepCapacity: true)
+        self.setupSecondContainer(self.secondContainer)
+        credits = 50
+        winnings = 0
+        currentBet = 0
     }
     
 }// last brace
