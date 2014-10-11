@@ -236,9 +236,20 @@ class ViewController: UIViewController {
     }
     
     func spinButtonPressed (button: UIButton) {
+        removeSlotImageViews()
         slots = Factory.createSlots()
         setupSecondContainer(self.secondContainer)
         
+    }
+    
+    func removeSlotImageViews () {
+        if self.secondContainer != nil {
+            let container: UIView? = self.secondContainer!
+            let subViews:Array? = container!.subviews
+            for view in subViews! {
+                view.removeFromSuperview()
+            }
+        }
     }
     
 }// last brace
