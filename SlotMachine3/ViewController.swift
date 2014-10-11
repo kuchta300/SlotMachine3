@@ -224,7 +224,7 @@ class ViewController: UIViewController {
         containerView.addSubview(self.spinButton)
 
     }
-       
+    
     func resetButtonPressed (button: UIButton) {
         hardReset()
     }
@@ -262,6 +262,15 @@ class ViewController: UIViewController {
         credits = 50
         winnings = 0
         currentBet = 0
+        
+        updateMainView()
+        
+    }
+    
+    func updateMainView () {
+        self.creditsLabel.text = "\(credits)"
+        self.betLabel.text = "\(currentBet)"
+        self.winnerPaidLabel.text = "\(winnings)"
     }
     
 }// last brace
