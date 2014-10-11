@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SlotMachine3/ViewController.swift"
-            timestampString = "434684798.687929"
+            timestampString = "434685130.924328"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "setupFourthContainer(_:)"
             landmarkType = "5">
          </BreakpointContent>
